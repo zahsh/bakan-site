@@ -1,0 +1,1511 @@
+<!doctype html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/bootstrap.rtl.min.css">
+  </head>
+  <body>
+    <!-- text -->
+    <svg  style="display: none;">
+      <symbol id="search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </symbol>
+      <symbol id="menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+      </symbol>  
+      <symbol id="shoppingCard" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+        <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+      </symbol>
+      <symbol id="star" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 25 25">
+        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+      </symbol>
+      <symbol id="heart" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
+        <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+      </symbol>
+      <symbol id="replace" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-repeat" viewBox="0 0 16 16">
+        <path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192Zm3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z"/>
+      </symbol>
+      <symbol  id="arrLeft" style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </symbol>
+      <symbol id="arrRight"  style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="delivery" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+        <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+      </symbol>
+      <symbol id="money" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-currency-dollar" viewBox="0 0 16 16">
+        <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
+      </symbol>
+      <symbol id="headset" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-headset" viewBox="0 0 16 16">
+        <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5z"/>
+      </symbol>
+      <symbol id="gift" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+        <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zM1 4v2h6V4H1zm8 0v2h6V4H9zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5V7zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5H7z"/>
+      </symbol>
+      <!--  -->
+      <symbol id="send" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+        <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z"/>
+      </symbol>
+      <symbol id="facebook" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+      </symbol>
+      <symbol id="twitter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+      </symbol>
+      <symbol id="instagram" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+      </symbol>
+      <symbol id="pinterest" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+      </symbol>
+      <symbol id="linkedin" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+      </symbol>
+      <symbol id="telephone" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+      </symbol>
+      <symbol id="letter" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+      </symbol>
+      <symbol id="headphone" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-headphones" viewBox="0 0 16 16">
+        <path d="M8 3a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V8a6 6 0 1 1 12 0v5a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1V8a5 5 0 0 0-5-5z"/>
+      </symbol>
+      <symbol id="map" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+      </symbol>
+    </svg>
+    <!-- text -->
+      <header class="header">
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand d-block d-md-none">BAKAN</a>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">bakan</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body align-items-center">
+                <ul class="navbar-nav flex-grow-1 pe-3">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      english
+                    </a>
+                    <ul class="dropdown-menu border-0">
+                      <li><a class="dropdown-item" href="#">persian</a></li>
+                      <li><a class="dropdown-item" href="#">korean</a></li>          
+                      <li><a class="dropdown-item" href="#">arabic</a></li>          
+                    </ul>
+                  </li>
+                </ul>
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item"><a href="#" class="nav-link">محل فروشگاه</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">پیگیری سفارشات</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">سوالات متداول</a></li>
+                  <!-- test -->
+                  <li class="nav-item dropdown d-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      فروشگاه
+                    </a>
+                    <ul class="dropdown-menu border-0">
+                      <li><a class="dropdown-item" href="#">کیف</a></li>
+                      <li><a class="dropdown-item" href="#">کفش</a></li>          
+                    </ul>
+                  </li>          
+                  <li class="nav-item dropdown d-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      همه دسته بندی ها
+                    </a>
+                    <ul class="dropdown-menu border-0">
+                      <li><a class="dropdown-item" href="#">هدفون</a></li>
+                      <li><a class="dropdown-item" href="#">لپتاپ و تبلت</a></li>          
+                      <li><a class="dropdown-item" href="#">گوشی های هوشمند</a></li>          
+                      <li><a class="dropdown-item" href="#">ساعت</a></li>          
+                      <li><a class="dropdown-item" href="#">دوربین و عکس</a></li>          
+                      <li><a class="dropdown-item" href="#">خانه و الکترونیک</a></li>          
+                      <li><a class="dropdown-item" href="#">خانه و الکترونیک</a></li>          
+                      <li><a class="dropdown-item" href="#">بلندگوی صدا</a></li>          
+                    </ul>
+                  </li> 
+                  <li class="nav-item dropdown d-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      وبلاگ
+                    </a>
+                    <ul class="dropdown-menu border-0">
+                      <li><a class="dropdown-item" href="#">وبلاگ 1</a></li>
+                      <li><a class="dropdown-item" href="#">وبلاگ 2</a></li>          
+                    </ul>
+                  </li> 
+                  <li class="nav-item dropdown d-block d-md-none">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      صفحات
+                    </a>
+                    <ul class="dropdown-menu border-0">
+                      <li><a class="dropdown-item" href="#">صفحه 1</a></li>
+                      <li><a class="dropdown-item" href="#">صفحه 2</a></li>          
+                    </ul>
+                  </li> 
+                  <form class="d-flex mt-3 m-md-0 d-block d-md-none" role="search">
+                    <input class="form-control me-2" type="search" placeholder="جستجو محصول ..." aria-label="Search">
+                    <button class="btn btn-primary" type="submit">جستجو</button>
+                  </form> 
+                  <!-- test -->
+                  <li class="nav-item"><a href="#" class="btn bg-white my-2 m-md-0">ورود / ثبت نام</a></li>
+                </ul>
+      
+              </div>
+            </div>
+          </div>
+        </nav>
+          <div class="container d-none d-md-block">
+            <div class="d-flex justify-content-between my-4 align-items-center">
+              <div class="d-flex justify-content-center">
+                  <a href="index.html">
+                    <img width="200px" height="30" src="images/logo.JPG" alt="logo">
+                  </a>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="search border py-1 px-2 rounded bg-white w-100 d-flex justify-content-between">
+                  <div class="dropdown">
+                    <button class="btn  btn-light py-2 px-3 dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                      همه دسته بندی ها
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">هدفون</a></li>
+                      <li><a class="dropdown-item" href="#">لپتاپ و تبلت</a></li>
+                      <li><a class="dropdown-item" href="#">گوشی های هوشمند</a></li>
+                      <li><a class="dropdown-item" href="#">ساعت</a></li>
+                      <li><a class="dropdown-item" href="#">دوربین و عکس</a></li>
+                      <li><a class="dropdown-item" href="#">خانه و الکترونیک</a></li>
+                      <li><a class="dropdown-item" href="#">بلندگوی صدا</a></li>
+                    </ul>
+                  </div>
+                  <div class=" w-75 d-flex align-items-center justify-content-between">
+                    <input type="search" name="search" id="search" class="searchinput border-0 px-3" id="searchinput" placeholder="جستجو محصول ...">
+                    <!-- <span>icon</span> -->
+                    <svg class="icon">
+                      <use href="#search"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex d-flex justify-content-center align-items-center">
+                  <!-- icon -->
+                  <svg class="icon">
+                    <use href="#shoppingCard"></use>
+                  </svg>
+                  <div class="ms-4">
+                    <h6 class="m-0 mxc">سبد خرید من</h6>
+                    <p class="m-0 text-danger">0 تومان</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="purple-bg container-fluid text-white py-2 d-none d-md-block">
+            <div class="container">
+              <div class="row justify-content-between align-items-center">
+                  <div class="col-6  d-flex justify-content-between align-items-center">
+                    <div class="col-6  d-flex align-items-center">
+                      <svg class="icon">
+                        <use href="#menu"></use>
+                      </svg>
+                      <p class="m-0 ms-2">خرید بر اساس دسته بندی ها</p>
+                    </div>
+                    <div class="col-6 btn-group text-white">
+                      <div class="dropdown mx-2 rounded activeHome">
+                        <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                          خانه
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">persian</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown mx-2">
+                        <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                          فروشگاه
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">persian</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown mx-2">
+                        <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                          وبلاگ
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">persian</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown mx-2">
+                        <button class="btn dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                          صفحات
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">persian</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2 text-center mxc">مدت زمان محدود پیشنهاد !</div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid my-3 d-none d-md-block ">
+            <div class="row justify-content-around">
+              <div class="col-1">
+                <h6 class="mxc">بهترین برچسب ها</h6>
+              </div>
+              <div class="col-10">
+                <a href="#" class="text-muted m-1">+Galaxy s8 /</a>
+                <a href="#" class="text-muted m-1">آیپد مینی 4 /</a>
+                <a href="#" class="text-muted m-1">الکترونیک /</a>
+                <a href="#" class="text-muted m-1">بازی /</a>
+                <a href="#" class="text-muted m-1">بهترین فروشندگان /</a>
+                <a href="#" class="text-muted m-1"> تازه رسیده ها /</a>
+                <a href="#" class="text-muted m-1"> تجهیزات جانبی /</a>
+                <a href="#" class="text-muted m-1"> حراج /</a>
+                <a href="#" class="text-muted m-1"> دوربین سامسونگ /</a>
+                <a href="#" class="text-muted m-1">  دوربین سونی /</a>
+                <a href="#" class="text-muted m-1"> شلوار جین و شلوار /</a>
+                <a href="#" class="text-muted m-1"> لپتاپ دل /</a>
+                <a href="#" class="text-muted m-1"> مد /</a>
+                <a href="#" class="text-muted m-1"> هدفون /</a>
+                <a href="#" class="text-muted m-1"> هدفون /</a>
+                <a href="#" class="text-muted m-1"> پلی استیشن 2 /</a>
+                <a href="#" class="text-muted m-1"> کامپیوتر /</a>
+                <a href="#" class="text-muted m-1"> کفش ورزشی /</a>
+                <a href="#" class="text-muted m-1"> کیف /</a>
+              </div>
+            </div>
+          </div>
+ 
+        <!-- test -->
+        <div class="container-fluid my-2">
+            <div class="owl-carousel top-carousel rounded-3 overflow-hidden">                 
+              <div class="item w-100 h-100"> <img class="w-100 h-100" src="images/image header.webp" alt=""></div>
+              <div class="item w-100 h-100"> <img class="w-100 h-100" src="images/image header2.webp" alt=""> </div>
+              <div class="item w-100 h-100"> <img class="w-100 h-100" src="images/image header3.webp" alt=""> </div>
+           </div>
+        </div>
+      </header>
+      <main>
+          <div class="container-fluid my-4">
+            <div class="row justify-content-center">
+              <div class="col-5 m-2 m-sm-1 col-md-3 m-md-0 col-sm-5">
+                <img src="images/p1.PNG" class="rounded w-100" alt="product">
+              </div>
+              <div class="col-5 m-2 m-sm-1 col-md-3 m-md-0 col-sm-5">
+                <img src="images/p2.PNG" class="rounded w-100" alt="product">
+              </div>
+              <div class="col-5 m-2 m-sm-1 col-md-3 m-md-0 col-sm-5">
+                <img src="images/p3.PNG" class="rounded w-100" alt="product">
+              </div>
+              <div class="col-5 m-2 m-sm-1 col-md-3 m-md-0 col-sm-5">
+                <img src="images/p4.PNG" class="rounded w-100" alt="product">
+              </div>
+            </div>
+          </div>
+          <div class="container my-5 d-none d-lg-block">
+              <div class="category text-center position-relative">
+                  <div class="category-contents">
+                    <h3>خرید بر اساس دسته بندی ها</h3>
+                    <div class="images text-white  mt-5 d-flex align-items-center justify-content-around">
+                      <div class="image-item">
+                        <img src="images/type.PNG" alt="image category">
+                        <h5 class="mt-3">دوربین و عکس</h5>
+                      </div>
+                      <div class="image-item">
+                        <img src="images/type.PNG" alt="image category">
+                        <h5 class="mt-3">دوربین و عکس</h5>
+                      </div>
+                      <div class="image-item">
+                        <img src="images/type.PNG" alt="image category">
+                        <h5 class="mt-3">دوربین و عکس</h5>
+                      </div>
+                      <div class="image-item">
+                        <img src="images/type.PNG" alt="image category">
+                        <h5 class="mt-3">دوربین و عکس</h5>
+                      </div>                      
+                      <div class="image-item">
+                        <img src="images/type.PNG" alt="image category">
+                        <h5 class="mt-3">دوربین و عکس</h5>
+                      </div>                      
+                      <div class="image-item">
+                        <img src="images/type.PNG" alt="image category">
+                        <h5 class="mt-3">دوربین و عکس</h5>
+                      </div>                    
+                      <div class="image-item">
+                        <img src="images/type.PNG" alt="image category">
+                        <h5 class="mt-3">دوربین و عکس</h5>
+                      </div>                   
+                     </div>
+                  </div>
+                  <div class="position-absolute z_index d-none d-lg-block  w-100 rounded-pill py-5"></div>
+              </div>
+          </div>
+          <div class="container">
+            <div class="prProducts text-center">
+              <h3 class="mb-5">پرفروش ترین محصولات</h3>
+              <div class="owl-carousel owl1 owl-theme">
+                <div class="card border product">
+                  <div class="card-image-top">
+                    <img src="images/pr.PNG" alt="image product">
+                    <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                        <h6>ساعت هوشمند</h6>
+                        <div class="stars d-flex justify-content-center">
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                        </div>
+                        <p class="bold mt-2">425 تومان - 325  تومان</p>
+                    </div>
+                  </div>
+                </div>              
+                <div class="card border product">
+                  <div class="card-image-top">
+                    <img src="images/pr.PNG" alt="image product">
+                    <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                        <h6>ساعت هوشمند</h6>
+                        <div class="stars d-flex justify-content-center">
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                        </div>
+                        <p class="bold mt-2">425 تومان - 325  تومان</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border product">
+                  <div class="card-image-top">
+                    <img src="images/pr.PNG" alt="image product">
+                    <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                        <h6>ساعت هوشمند</h6>
+                        <div class="stars d-flex justify-content-center">
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                        </div>
+                        <p class="bold mt-2">425 تومان - 325  تومان</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border product">
+                  <div class="card-image-top">
+                    <img src="images/pr.PNG" alt="image product">
+                    <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                        <h6>ساعت هوشمند</h6>
+                        <div class="stars d-flex justify-content-center">
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                        </div>
+                        <p class="bold mt-2">425 تومان - 325  تومان</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border product">
+                  <div class="card-image-top">
+                    <img src="images/pr.PNG" alt="image product">
+                    <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                        <h6>ساعت هوشمند</h6>
+                        <div class="stars d-flex justify-content-center">
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                        </div>
+                        <p class="bold mt-2">425 تومان - 325  تومان</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border product">
+                  <div class="card-image-top">
+                    <img src="images/pr.PNG" alt="image product">
+                    <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                        <h6>ساعت هوشمند</h6>
+                        <div class="stars d-flex justify-content-center">
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                        </div>
+                        <p class="bold mt-2">425 تومان - 325  تومان</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border product">
+                  <div class="card-image-top">
+                    <img src="images/pr.PNG" alt="image product">
+                    <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                        <h6>ساعت هوشمند</h6>
+                        <div class="stars d-flex justify-content-center">
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                        </div>
+                        <p class="bold mt-2">425 تومان - 325  تومان</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border product">
+                  <div class="card-image-top">
+                    <img src="images/pr.PNG" alt="image product">
+                    <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                        <h6>ساعت هوشمند</h6>
+                        <div class="stars d-flex justify-content-center">
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                          <svg class="icon">
+                            <use href="#star"></use>
+                          </svg>
+                        </div>
+                        <p class="bold mt-2">425 تومان - 325  تومان</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container my-5">
+              <div class="cheap-product-box cheapProducts rounded-5 p-3">
+                <h3 class="text-white text-center mb-3 d-block d-xl-none">حراج ویژه</h3>
+                <div class="d-flex justify-content-end align-items-center flex-column flex-sm-row">
+                  <div class="times me-4 d-flex justify-content-around text-white ">                              
+                      <div class="cheap-title d-none d-xl-flex">
+                        <p class="rotate">حراج ویژه</p>
+                      </div>
+                        <div class="items-times d-flex flex-row-reverse flex-sm-column mb-2 m-sm-0">
+                        <div class="item-time d-flex flex-column text-center mx-1 m-sm-0">
+                            <span class="badge my-1 bg-light text-dark" id="day">55</span>
+                            <span>روز ها</span>
+                        </div>
+                        <div class="item-time d-flex flex-column text-center mx-1 m-sm-0">
+                          <span class="badge my-1 bg-light text-dark" id="hour">00</span>
+                          <span>ساعت</span>
+                        </div>
+                        <div class="item-time d-flex flex-column text-center mx-1 m-sm-0">
+                        <span class="badge my-1 bg-light text-dark" id="minute">29</span>
+                        <span>دقیقه</span>
+                        </div>
+                        <div class="item-time d-flex flex-column text-center mx-1 m-sm-0">
+                      <span class="badge my-1 bg-light text-dark" id="second">39</span>
+                      <span>ثانیه</span>
+                        </div>
+                        </div>
+                  </div>
+                  <div class="owl-carousel owl-theme items-box">
+                          <div class="cheapProduct rounded-5 position-relative bg-white d-flex align-items-center justify-content-between px-3">
+                            <div class="badge position-absolute py-2 px-3 badge-cheap">حراج</div>
+                            <div class="image h-75">
+                              <img src="images/pr.PNG" class="h-100" alt="cheap image">
+                            </div>
+                            <div class="cheap-product-content">
+                              <h6>چراغ سقفی</h6>
+                              <div class="stars d-flex">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <h4 class="my-4 crimson">315 تومان <del class="text-muted">250 تومان</del></h4>
+                              <div class="btns-group">
+                                  <button class="btn btn-light mb-2">افزودن به سبد خرید</button>
+                                  <button class="btn btn-light mb-2">
+                                    <svg class="icon">
+                                      <use href="#heart"></use>
+                                    </svg>
+                                  </button>
+                                  <button class="btn btn-light mb-2">
+                                    <svg class="icon">
+                                      <use href="#replace"></use>
+                                    </svg>
+                                  </button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="cheapProduct rounded-5 position-relative bg-white d-flex align-items-center justify-content-between px-3">
+                          <div class="badge position-absolute py-2 px-3 badge-cheap">حراج</div>
+                          <div class="image h-75">
+                            <img src="images/cheap.PNG" class="h-100" alt="cheap image">
+                          </div>
+                          <div class="cheap-product-content">
+                            <h6>چراغ سقفی</h6>
+                            <div class="stars d-flex">
+                              <svg class="icon">
+                                <use href="#star"></use>
+                              </svg>
+                              <svg class="icon">
+                                <use href="#star"></use>
+                              </svg>
+                              <svg class="icon">
+                                <use href="#star"></use>
+                              </svg>
+                              <svg class="icon">
+                                <use href="#star"></use>
+                              </svg>
+                              <svg class="icon">
+                                <use href="#star"></use>
+                              </svg>
+                            </div>
+                            <h4 class="my-4 crimson">315 تومان <del class="text-muted">250 تومان</del></h4>
+                            <div class="btns-group">
+                                <button class="btn btn-light mb-2">افزودن به سبد خرید</button>
+                                <button class="btn btn-light mb-2">
+                                  <svg class="icon">
+                                    <use href="#heart"></use>
+                                  </svg>
+                                </button>
+                                <button class="btn btn-light mb-2">
+                                  <svg class="icon">
+                                    <use href="#replace"></use>
+                                  </svg>
+                                </button>
+                            </div>
+                          </div>
+                      </div>
+                          <div class="cheapProduct rounded-5 position-relative bg-white d-flex align-items-center justify-content-between px-3">
+                            <div class="badge position-absolute py-2 px-3 badge-cheap">حراج</div>
+                            <div class="image h-75">
+                              <img src="images/pr.PNG" class="h-100" alt="cheap image">
+                            </div>
+                            <div class="cheap-product-content">
+                              <h6>چراغ سقفی</h6>
+                              <div class="stars d-flex">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <h4 class="my-4 crimson">315 تومان <del class="text-muted">250 تومان</del></h4>
+                              <div class="btns-group">
+                                  <button class="btn btn-light mb-2">افزودن به سبد خرید</button>
+                                  <button class="btn btn-light mb-2">
+                                    <svg class="icon">
+                                      <use href="#heart"></use>
+                                    </svg>
+                                  </button>
+                                  <button class="btn btn-light mb-2">
+                                    <svg class="icon">
+                                      <use href="#replace"></use>
+                                    </svg>
+                                  </button>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="cheapProduct rounded-5 position-relative bg-white d-flex align-items-center justify-content-between px-3">
+                          <div class="badge position-absolute py-2 px-3 badge-cheap">حراج</div>
+                          <div class="image h-75">
+                            <img src="images/cheap.PNG" class="h-100" alt="cheap image">
+                          </div>
+                          <div class="cheap-product-content">
+                            <h6>چراغ سقفی</h6>
+                            <div class="stars d-flex">
+                              <svg class="icon">
+                                <use href="#star"></use>
+                              </svg>
+                              <svg class="icon">
+                                <use href="#star"></use>
+                              </svg>
+                              <svg class="icon">
+                                <use href="#star"></use>
+                              </svg>
+                              <svg class="icon">
+                                <use href="#star"></use>
+                              </svg>
+                              <svg class="icon">
+                                <use href="#star"></use>
+                              </svg>
+                            </div>
+                            <h4 class="my-4 crimson">315 تومان <del class="text-muted">250 تومان</del></h4>
+                            <div class="btns-group">
+                                <button class="btn btn-light mb-2">افزودن به سبد خرید</button>
+                                <button class="btn btn-light mb-2">
+                                  <svg class="icon">
+                                    <use href="#heart"></use>
+                                  </svg>
+                                </button>
+                                <button class="btn btn-light mb-2">
+                                  <svg class="icon">
+                                    <use href="#replace"></use>
+                                  </svg>
+                                </button>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <!-- test -->
+            </div>
+          </div>
+          <div class="container mb-5">
+            <div class="slider-box">
+              <h3 class="mb-4">گوشی های هوشمند</h3>
+              <div class="slider-content d-flex align-items-start justify-content-center">
+                  <div class="img-slider  rounded-4 d-none d-md-block">
+                    <img src="images/slider1.PNG" class="w-100 h-100" alt="image slider">
+                  </div>
+                  <div class="slider w-75">
+                    <div class="owl-carousel owl2 owl-theme">
+                      <div class="card border product">
+                        <div class="card-image-top">
+                          <img src="images/pr.PNG" alt="image product">
+                          <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                              <h6>ساعت هوشمند</h6>
+                              <div class="stars d-flex justify-content-center">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <p class="bold mt-2">425 تومان - 325  تومان</p>
+                          </div>
+                        </div>
+                      </div>              
+                      <div class="card border product">
+                        <div class="card-image-top">
+                          <img src="images/pr.PNG" alt="image product">
+                          <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                              <h6>ساعت هوشمند</h6>
+                              <div class="stars d-flex justify-content-center">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <p class="bold mt-2">425 تومان - 325  تومان</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card border product">
+                        <div class="card-image-top">
+                          <img src="images/pr.PNG" alt="image product">
+                          <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                              <h6>ساعت هوشمند</h6>
+                              <div class="stars d-flex justify-content-center">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <p class="bold mt-2">425 تومان - 325  تومان</p>
+                          </div>
+                        </div>
+                      </div>        
+                      <div class="card border product">
+                        <div class="card-image-top">
+                          <img src="images/pr.PNG" alt="image product">
+                          <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                              <h6>ساعت هوشمند</h6>
+                              <div class="stars d-flex justify-content-center">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <p class="bold mt-2">425 تومان - 325  تومان</p>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="card border product">
+                        <div class="card-image-top">
+                          <img src="images/pr.PNG" alt="image product">
+                          <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                              <h6>ساعت هوشمند</h6>
+                              <div class="stars d-flex justify-content-center">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <p class="bold mt-2">425 تومان - 325  تومان</p>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="card border product">
+                        <div class="card-image-top">
+                          <img src="images/pr.PNG" alt="image product">
+                          <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                              <h6>ساعت هوشمند</h6>
+                              <div class="stars d-flex justify-content-center">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <p class="bold mt-2">425 تومان - 325  تومان</p>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+              </div>
+            </div>            
+          </div>
+          <div class="container mb-5">
+            <div class="slider-box">
+              <h3 class="mb-4">لپتاپ</h3>
+              <div class="slider-content d-flex align-items-start justify-content-center">
+                  <div class="img-slider rounded-4 d-none d-md-block">
+                    <img src="images/slidrer2.PNG" class="w-100 h-100" alt="image slider">
+                  </div>
+                  <div class="slider w-75">
+                    <div class="owl-carousel owl2 owl-theme">
+                      <div class="card border product">
+                        <div class="card-image-top">
+                          <img src="images/pr.PNG" alt="image product">
+                          <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                              <h6>ساعت هوشمند</h6>
+                              <div class="stars d-flex justify-content-center">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <p class="bold mt-2">425 تومان - 325  تومان</p>
+                          </div>
+                        </div>
+                      </div>              
+                      <div class="card border product">
+                        <div class="card-image-top">
+                          <img src="images/pr.PNG" alt="image product">
+                          <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                              <h6>ساعت هوشمند</h6>
+                              <div class="stars d-flex justify-content-center">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <p class="bold mt-2">425 تومان - 325  تومان</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card border product">
+                        <div class="card-image-top">
+                          <img src="images/pr.PNG" alt="image product">
+                          <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                              <h6>ساعت هوشمند</h6>
+                              <div class="stars d-flex justify-content-center">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <p class="bold mt-2">425 تومان - 325  تومان</p>
+                          </div>
+                        </div>
+                      </div>        
+                      <div class="card border product">
+                        <div class="card-image-top">
+                          <img src="images/pr.PNG" alt="image product">
+                          <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                              <h6>ساعت هوشمند</h6>
+                              <div class="stars d-flex justify-content-center">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <p class="bold mt-2">425 تومان - 325  تومان</p>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="card border product">
+                        <div class="card-image-top">
+                          <img src="images/pr.PNG" alt="image product">
+                          <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                              <h6>ساعت هوشمند</h6>
+                              <div class="stars d-flex justify-content-center">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <p class="bold mt-2">425 تومان - 325  تومان</p>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="card border product">
+                        <div class="card-image-top">
+                          <img src="images/pr.PNG" alt="image product">
+                          <div class="card-body d-flex align-items-center flex-column justify-content-center">
+                              <h6>ساعت هوشمند</h6>
+                              <div class="stars d-flex justify-content-center">
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                  <use href="#star"></use>
+                                </svg>
+                              </div>
+                              <p class="bold mt-2">425 تومان - 325  تومان</p>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                  </div>
+              </div>
+            </div>            
+          </div>
+          <div class="container-fluid mb-5 gray p-5">
+              <div class="articles">
+                  <h3 class="text-center mb-5">آخرین خبر ها</h3>
+                  <div class="articles-content d-flex align-items-center justify-content-around flex-wrap">
+                    <article class="article d-flex align-items-center bg-white rounded-5 overflow-hidden p-3 justify-content-between mx-1 mb-3 flex-column flex-sm-row">
+                        <div class="article-img overflow-hidden rounded-4 position-relative mb-3">
+                          <img src="images/article.PNG" alt="image article">
+                          <div class="badge bg-white position-absolute text-dark py-3 px-1 d-flex flex-column date"><span>29</span><span>فروردین</span></div>
+                        </div>
+                        <div class="article-texts text-center text-md-start">
+                            <p><span class="text-muted">پست توسط : </span>مدیر سایت</p>
+                            <h5>روش راه اندازی فروشگاه</h5>
+                            <p class="text-muted my-3">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک  است. چاپگر ها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و ...
+                            </p>
+                            <a href="#" class="btn btn-secondary rounded">ادامه مطلب</a>
+                        </div>
+                    </article>
+                    <article class="article d-flex align-items-center bg-white rounded-5 overflow-hidden p-3 justify-content-between mx-1 mb-3 flex-column flex-sm-row">
+                      <div class="article-img overflow-hidden  rounded-4 position-relative  mb-3">
+                        <img src="images/article2.PNG" alt="image article">
+                        <div class="badge bg-white position-absolute text-dark py-3 px-1 d-flex flex-column date"><span>29</span><span>فروردین</span></div>
+                      </div>
+                      <div class="article-texts text-center text-md-start">
+                          <p><span class="text-muted">پست توسط : </span>مدیر سایت</p>
+                          <h5>روش راه اندازی فروشگاه</h5>
+                          <p class="text-muted my-3">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک  است. چاپگر ها و متون بلکه روزنامه و مجله در ستون و سطر آنچنان که لازم است و ...
+                          </p>
+                          <a href="#" class="btn btn-secondary rounded">ادامه مطلب</a>
+                      </div>
+                  </article>
+                  </div>
+              </div>
+          </div>
+          <div class="container mb-5">
+            <div class="Advantages row align-items-center justify-content-between">
+                <div class="advantages-item col-6 col-lg-3 bg-light d-flex justify-content-sm-between justify-content-center align-items-center rounded-4 p-3">
+                  <div class="advantage-img d-none  rounded-5 bg-white p-4 d-sm-flex align-items-center justify-content-center">
+                    <svg class="icon">
+                      <use href="#delivery"></use>
+                    </svg>
+                  </div>
+                  <div class="advantage-text ps-3">
+                    <h6>ارسال رایگان</h6>
+                    <p class="text-muted mxc">سفارشات بیش از 100 تومان</p>
+                  </div>
+                </div>
+                <div class="advantages-item col-6 col-lg-3 bg-light d-flex justify-content-sm-between justify-content-center align-items-center rounded-4 p-3">
+                  <div class="advantage-img d-none  rounded-5 bg-white p-4 d-sm-flex align-items-center justify-content-center">
+                    <svg class="icon">
+                      <use href="#money"></use>
+                    </svg>                  
+                  </div>
+                  <div class="advantage-text ps-3">
+                    <h6>ضمانت پول</h6>
+                    <p class="text-muted mxc">30 روز برگشت پول</p>
+                  </div>
+                </div>
+                <div class="advantages-item col-6 col-lg-3 bg-light d-flex justify-content-sm-between justify-content-center align-items-center rounded-4 p-3">
+                  <div class="advantage-img d-none  rounded-5 bg-white p-4 d-sm-flex align-items-center justify-content-center">
+                    <svg class="icon">
+                      <use href="#headset"></use>
+                    </svg>                  
+                  </div>
+                  <div class="advantage-text ps-3">
+                    <h6 class="mxc">مرکز راهنمایی 7 / 24 </h6>
+                    <p class="text-muted mxc">پشتیبانی آنلاین 24 ساعته</p>
+                  </div>
+                </div>
+                <div class="advantages-item col-6 col-lg-3 bg-light d-flex justify-content-sm-between justify-content-center align-items-center rounded-4 p-3">
+                  <div class="advantage-img d-none  rounded-5 bg-white p-4 d-sm-flex align-items-center justify-content-center">
+                    <svg class="icon">
+                      <use href="#gift"></use>
+                    </svg>                  
+                   </div>
+                  <div class="advantage-text ps-3">
+                    <h6>تبلیغات هدیه</h6>
+                    <p class="text-muted mxc">سفارشات بیش از 100 تومان</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </main>
+      <footer class="footer overflow-hidden">
+        <div class="container-fluid bg-dark p-0">
+          <section class="footer-links p-5 d-flex flex-column flex-md-row align-items-sm-stretch justify-content-between">
+            <div class="footer-links-right d-flex flex-wrap  flex-column flex-sm-row flex-md-nowrap justify-content-start justify-content-sm-around justify-content-lg-between mb-4 mb-lg-0">
+              <div class="links-right-item m-4 mx-md-3">
+                <h5 class="text-white mb-3">حساب من</h5>
+                <div class="container-footer-links">
+                  <ul class="m-0 p-0 d-flex flex-sm-column justify-content-center">
+                    <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">درباره ما</a></li>
+                    <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">پشتیبانی</a></li>
+                    <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">بازخورد</a></li>
+                    <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">پیگیری سفارشات</a></li>
+                    <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">بزودی</a></li>
+                    <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">خدمات سفارشی</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="links-right-item m-4 mx-md-3">
+                <h5 class="text-white mb-3">اطلاعات</h5>
+                <ul class="m-0 p-0 d-flex flex-sm-column justify-content-center">
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">خدمات سفارشی</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">ارسال و بازگردانی</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">پیگیری سفارشات</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">پشتیبانی</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">محل فروشگاه</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">بازخورد مشتری</a></li>
+                </ul>
+              </div>
+              <div class="links-right-item m-4 mx-md-3">
+                <h5 class="text-white mb-3 mxc">خدمات مشتری</h5>
+                <ul class="m-0 p-0 d-flex flex-sm-column justify-content-center">
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">درباره ما</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">بزودی</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">خدمات مشتری</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">پیگیری سفارشات</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">بازخورد</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">پشتیبانی</a></li>
+                </ul>
+              </div>
+              <div class="links-right-item m-4 mx-md-3">
+                <h5 class="text-white mb-3">تماس با ما</h5>
+                <ul class="m-0 p-0 d-flex flex-sm-column justify-content-center">
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">خدمات مشتری</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">ارسال و بازگردانی</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">پیگیری سفارشات</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">پشتیبانی</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">محل فروشگاه</a></li>
+                  <li class="mb-2 mx-4 mx-sm-0"><a href="#" class="text-white-50">بازخورد مشتری</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-links-left text-white">
+              <h5>عضویت در خبرنامه</h5>
+              <div class="input p-3 bg-white rounded-2 d-flex my-4">
+                <input type="email" class="w-100" name="email" id="email" placeholder="آدرس ایمیل خود را وارد کنید">
+                <svg class="icon" style="color: black;">
+                  <use href="#send"></use>
+                </svg>
+              </div>
+              <h5 class="text-sm-start">ما را دنبال کنید</h5>
+              <div class="companies my-4 d-flex justify-content-md-between align-items-center">
+                <div class="company bg-white p-3 rounded-5 mx-2 d-flex align-items-center justify-content-center">
+                  <svg class="icon" style="color: black;">
+                    <use href="#facebook"></use>
+                  </svg>
+                </div>
+                <div class="company bg-white p-3 rounded-5 mx-2 d-flex align-items-center justify-content-center">
+                  <svg class="icon" style="color: black;">
+                    <use href="#twitter"></use>
+                  </svg>
+                </div>
+                <div class="company bg-white p-3 rounded-5 mx-2 d-flex align-items-center justify-content-center">
+                  <svg class="icon" style="color: black;">
+                    <use href="#instagram"></use>
+                  </svg>
+                </div>
+                <div class="company bg-white p-3 rounded-5 mx-2 d-flex align-items-center justify-content-center">
+                  <svg class="icon" style="color: black;">
+                    <use href="#pinterest"></use>
+                  </svg>
+                </div>
+                <div class="company bg-white p-3 rounded-5 mx-2 d-flex align-items-center justify-content-center">
+                  <svg class="icon" style="color:black;">
+                    <use href="#linkedin"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="footer-info d-flex flex-column flex-sm-row justify-content-center py-4">
+            <div class="footer-info-item d-flex justify-content-between align-items-center p-3">
+              <div class="footer-info-img d-none d-lg-block rounded-4 bg-dark p-2 p-md-4">
+                <svg class="icon">
+                  <use href="#telephone"></use>
+                </svg>
+              </div>
+              <div class="footer-info-text">
+                <h6 class="text-white">تلفن :</h6>
+                <p class="text-secondary m-0">021-987654</p>
+              </div>
+            </div>
+            <div class="footer-info-item d-flex justify-content-between align-items-center p-3">
+              <div class="footer-info-img rounded-4 bg-dark  d-none d-lg-block p-2 p-md-4">
+                <svg class="icon">
+                  <use href="#letter"></use>
+                </svg>
+              </div>
+              <div class="footer-info-text">
+                <h6 class="text-white">ایمیل :</h6>
+                <p class="text-secondary m-0">bakan@gmail.com</p>
+              </div>
+            </div>
+            <div class="footer-info-item d-flex justify-content-between align-items-center p-3">
+              <div class="footer-info-img rounded-4 bg-dark  d-none d-lg-block p-2 p-md-4">
+                <svg class="icon">
+                  <use href="#headphone"></use>
+                </svg>
+              </div>
+              <div class="footer-info-text">
+                <h6 class="text-white">چت اسکایپ :</h6>
+                <p class="text-secondary m-0 mxc">bakan-ytcvn_811</p>
+              </div>
+            </div>
+            <div class="footer-info-item d-flex justify-content-between align-items-center p-3">
+              <div class="footer-info-img rounded-4 bg-dark  d-none d-lg-block p-2 p-md-4">
+                <svg class="icon">
+                  <use href="#map"></use>
+                </svg>
+              </div>
+              <div class="footer-info-text">
+                <h6 class="text-white">موقعیت :</h6>
+                <p class="text-secondary m-0">مازندران تنکابن</p>
+              </div>
+            </div>
+          </section>
+          <section class="footer-badges d-none d-md-block p-5">
+            <h5 class="text-white">برچسب های محبوب</h5>
+            <div class="badges">
+              <div class="badge py-3 px-4 m-1">+Galaxy s8</div>
+              <div class="badge py-3 px-4 m-1">آیپد مینی 4</div>
+              <div class="badge py-3 px-4 m-1">الکترونیک</div>
+              <div class="badge py-3 px-4 m-1">الکترونیکی</div>
+              <div class="badge py-3 px-4 m-1">بازی</div>
+              <div class="badge py-3 px-4 m-1">بهترین فروشندگان</div>
+              <div class="badge py-3 px-4 m-1">تازه رسیده ها</div>
+              <div class="badge py-3 px-4 m-1">تجهیزات جانبی</div>
+              <div class="badge py-3 px-4 m-1">حراج</div>
+              <div class="badge py-3 px-4 m-1">دوربین سامسونگ</div>
+              <div class="badge py-3 px-4 m-1">دوربین سونی</div>
+              <div class="badge py-3 px-4 m-1">شلوار جین و شلوار</div>
+              <div class="badge py-3 px-4 m-1">لپتاپ دل</div>
+              <div class="badge py-3 px-4 m-1">مد</div>
+              <div class="badge py-3 px-4 m-1">هدفون</div>
+              <div class="badge py-3 px-4 m-1">پلی استیشن 2</div>
+              <div class="badge py-3 px-4 m-1">کامپیوتر</div>
+              <div class="badge py-3 px-4 m-1">کفش ورزشی</div>
+              <div class="badge py-3 px-4 m-1">کیف</div>
+            </div>
+          </section>
+          <section class="copy-right py-3 px-2 bg-white d-flex flex-column flex-sm-row justify-content-between align-items-center">
+            <p class="m-0 mxc">&copy; تمامی این حقوق برای این قالب محفوظ است </p>
+            <div class="footer-companies d-none d-sm-flex align-items-center justify-content-between w-25">
+              <div class="footer-image">
+                <img src="images/company.PNG" alt="footer image">             
+              </div>
+              <div class="footer-image">
+                <img src="images/company.PNG" alt="footer image">             
+              </div>
+              <div class="footer-image">
+                <img src="images/company.PNG" alt="footer image">             
+              </div>
+              <div class="footer-image">
+                <img src="images/company.PNG" alt="footer image">             
+              </div>
+              <div class="footer-image">
+                <img src="images/company.PNG" alt="footer image">             
+              </div>
+              <div class="footer-image">
+                <img src="images/company.PNG" alt="footer image">             
+              </div>
+            </div>
+          </section>
+        </div>
+      </footer>
+
+
+     <script src="scripts/bootstrap.bundle.min.js"></script>
+     <script src="scripts/jquery-3.7.0.min.js"></script>
+     <script src="scripts/owl.carousel.min.js"></script>
+     <script>
+      $('.owl-carousel.owl1').owlCarousel({
+    loop:true,
+    margin:10,
+    rtl : true,
+    navText:["<div class = 'parent'><div class='next'><svg class='icon'><use href='#arrLeft'></use></svg></div>","<div class='prev'><svg class='icon'><use href='#arrRight'></use></svg></div></div>"],
+    responsiveClass:true,
+    autoplay : true,
+    autoplayTimeout : 3000,
+    responsive:{
+          0 : {
+            items : 1 ,
+            nav : false ,
+          } ,
+          450 : {
+            items : 2,
+            nav : false
+          } ,
+          768 : {
+            items : 3,
+            nav : false
+          },
+          992 : {
+            items : 4 ,
+            nav : true
+          },
+          1200 : {
+            items : 5 , 
+            nav:true
+          }
+      }
+  })
+
+  // 
+  $('.owl-carousel.owl2').owlCarousel({
+    loop:true,
+    margin:10,
+    nav : true,
+    rtl : true,
+    navText:["<div class = 'parent'><div class='next2'><svg class='icon'><use href='#arrLeft'></use></svg></div>","<div class='prev2'><svg class='icon'><use href='#arrLeft'></use></svg></div></div>"],
+    responsiveClass:true,
+    autoplay : true,
+    autoplayTimeout :3000,
+    responsive:{
+          0 : {
+            items : 1
+          },
+          500 : {
+            items :2
+          },
+          1000 : {
+            items : 3
+          },
+          1200 : {
+            items : 4
+          }
+      }
+  })
+
+
+  $('.top-carousel').owlCarousel({
+       rtl:true,
+       loop:true,
+       margin:3,
+       nav:true,
+       autoplayHoverPause : true,
+       autoplay : true,
+       autoplayTimeout : 4000,
+       items:1,
+      //  navText:["<div class = 'parent'><div class='next'></div>","<div class='prev'></div></div>"],
+       navText:["<div class='nextslide'><svg class='icon'><use href='#arrLeft'></use></svg></div>","<div class='prevslide'><svg class='icon'><use href='#arrRight'></use></svg></div>"],
+       responsive:{
+           0:{
+               items:1
+           },
+           600:{
+               items:1
+           },
+           1000:{
+               items:1
+           }
+       }
+   })
+
+
+
+   $('.owl-carousel.items-box').owlCarousel({
+    loop:true,
+    margin:15,
+    rtl : true,
+    nav : false,
+    autoplay : true,
+    autoplayTimeout : 3000,
+    responsiveClass:true,
+    responsive:{
+          0:{
+              items:1,
+          },
+          768:{
+              items:2,
+          }
+      }
+  })
+  // timer
+  var second = 1000;
+var minute = second * 60;
+var hour = minute * 60;
+var day = hour * 24;
+
+// اون تاریخی که قراره بهش برسیم
+// let countDown = new Date('Sep 30, 2024 00:00:00').getTime();
+let countDown = new Date('nov 15, 2023 00:00:00').getTime();
+
+function MyRacing() {
+let nowDate = new Date().getTime(),
+distance = countDown - nowDate;
+document.getElementById('day').innerHTML = Math.floor(distance / (day)),
+document.getElementById('hour').innerHTML = Math.floor((distance % (day)) / (hour)),
+document.getElementById('minute').innerHTML = Math.floor((distance % (hour)) / (minute)),
+document.getElementById('second').innerHTML = Math.floor((distance % (minute)) / second);
+	  
+// وقتی تاریخ و زمان گذشته بود
+if (distance < 0) {
+ clearInterval(MyTimer);
+ alert("مسابقه شروع شده است");
+}
+
+}
+
+MyTimer = setInterval( MyRacing , 1000);
+
+     </script>
+  </body>
+</html>
